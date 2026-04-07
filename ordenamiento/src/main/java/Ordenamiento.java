@@ -8,6 +8,16 @@ public class Ordenamiento {
         System.out.println("Cuantos numeros desea ingresar: ");
         int n= sc.nextInt();
         
+        int arr[] = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el número " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+
+        ordenar(arr);
+
+        System.out.println(Arrays.toString(arr));
     }
     private static void ordenar(int v[]) {
         for (int i = 0; i < v.length-1; i++) {
