@@ -6,21 +6,22 @@ public class Ordenamiento {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        Random rand = new Random();
+        Random ra = new Random();
         System.out.println("Cuantos numeros desea ingresar: ");
         int n= sc.nextInt();
         
         int arr[] = new int[n];
         
-        for (int i = 0; i < n; i++) {
-            System.out.print("Ingrese el número " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+       for (int i = 0; i < n; i++) {
+            arr[i] = ra.nextInt();
         }
+        System.out.println("Arreglo generado: " + Arrays.toString(arr));
 
         ordenar(arr);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Arreglo ordenado: " + Arrays.toString(arr));
     }
+    
     private static void ordenar(int v[]) {
         for (int i = 0; i < v.length-1; i++) {
             for (int j = i+1; j < v.length ; j++) {
