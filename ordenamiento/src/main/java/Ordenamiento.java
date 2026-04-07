@@ -1,10 +1,12 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Random;
 
 public class Ordenamiento {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
         System.out.println("Cuantos numeros desea ingresar: ");
         int n= sc.nextInt();
         
