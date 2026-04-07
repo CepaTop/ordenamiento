@@ -1,8 +1,13 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
 public class Ordenamiento {
     public static void main(String[] args) {
-        int arr[] = {5, 2, 11, -8, 115, 56, -3};
-        ordenar(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Cuantos numeros desea ingresar: ");
+        int n= sc.nextInt();
+        
     }
     private static void ordenar(int v[]) {
         for (int i = 0; i < v.length-1; i++) {
